@@ -1,0 +1,14 @@
+mkdir /home/animals
+mkdir /home/animals/dogs
+mkdir /home/animals/cats
+mkdir /home/animals/fish
+touch /home/animals/dogs/pluto
+touch /home/animals/fish/nemo
+touch /home/animals/cats/garfield
+touch /tmp/adam
+mkdir /home/humans
+cp /tmp/adam /home/humans
+touch /tmp/evA
+mv /tmp/evA /opt/eve
+mv /opt/eve /home/humans
+ls /home/humans
