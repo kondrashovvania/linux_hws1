@@ -1,0 +1,41 @@
+public class NumberConverter {
+
+    // Decimal to octal
+    public static String decimalToOctal(int decimal) {
+        return Integer.toOctalString(decimal);
+    }
+
+    // Octal to decimal
+    public static int octalToDecimal(String octal) {
+        return Integer.parseInt(octal, 8);
+    }
+
+    public static void main(String[] args) {
+
+        // Decimal to octal
+        int decimal1 = 1144;
+        String octal1 = decimalToOctal(decimal1);
+        System.out.println(decimal1 + " (10) = " + octal1 + " (8)");
+
+        int decimal2 = 978;
+        String octal2 = decimalToOctal(decimal2);
+        System.out.println(decimal2 + " (10) = " + octal2 + " (8)");
+
+        int decimal3 = 12;
+        String octal3 = decimalToOctal(decimal3);
+        System.out.println(decimal3 + " (10) = " + octal3 + " (8)");
+
+        // Octal to decimal
+        String octal4 = "2170";
+        int decimal4 = octalToDecimal(octal4);
+        System.out.println(octal4 + " (8) = " + decimal4 + " (10)");
+
+        String octal5 = "1722";
+        int decimal5 = octalToDecimal(octal5);
+        System.out.println(octal5 + " (8) = " + decimal5 + " (10)");
+
+        String octal6 = "14";
+        int decimal6 = octalToDecimal(octal6);
+        System.out.println(octal6 + " (8) = " + decimal6 + " (10)");
+    }
+}
