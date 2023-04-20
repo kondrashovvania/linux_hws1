@@ -1,0 +1,5 @@
+vi /tmp/file.txt
+df -h | head -n 3 > /tmp/file.txt
+chmod g+w /tmp/file.txt
+chmod u-r /tmp/file.txt
+chmod o+x /tmp/file.txt
